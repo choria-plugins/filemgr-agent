@@ -1,11 +1,23 @@
-#MCollective File Manager Agent
+# Choria File Manager Agent
 
 This agent let you touch files, delete files or retrieve a bunch of stats about a file.
 
-##Installation
-Follow the [basic plugin install guide](http://projects.puppetlabs.com/projects/mcollective-plugins/wiki/InstalingPlugins)
+## Installation
 
-##Usage
+This agent is installed by default as part of the [Choria Orchestrator](https://choria.io).
+
+## Configuration
+
+Actions `status`, `remove` and `touch` have a default file when no file path is given, it defaults to `/var/run/mcollective.plugin.filemgr.touch`.
+
+To cofigure this create the following Hiera data:
+
+```yaml
+mcollective_agent_filemgr::config:
+  touch_file: "/tmp/touchfile"
+```
+
+## Usage
 
 To get the status of a file:
 
@@ -37,4 +49,4 @@ dev1.example.com:
 Finished processing 1 / 1 hosts in 71.65 ms
 ```
 
-You can similarly touch and remove a file using those named actions.
+You can similarly `touch` and `remove` a file using those named actions.
