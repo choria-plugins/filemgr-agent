@@ -1,6 +1,12 @@
 # Changelog
 
-Change history for mcollective-filemgr.
+Change history for `choria/mcollective_agent_filemgr`
+
+## 2.0.0
+
+Released 2018-02-27
+
+ * Fork from Puppet Inc
 
 ## 1.1.0
 
