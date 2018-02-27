@@ -2,6 +2,8 @@
 
 This agent let you touch files, delete files or retrieve a bunch of stats about a file.
 
+<!--- actions -->
+
 ## Installation
 
 This agent is installed by default as part of the [Choria Orchestrator](https://choria.io).

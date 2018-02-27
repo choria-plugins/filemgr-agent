@@ -1,9 +1,9 @@
 metadata    :name        => "filemgr",
             :description => "File Manager",
             :author      => "Mike Pountney <mike.pountney@gmail.com>",
-            :license     => "ASL 2.0",
-            :version     => "1.1.0",
-            :url         => "http://www.puppetlabs.com/mcollective",
+            :license     => "Apache-2.0",
+            :version     => "2.0.0",
+            :url         => "https://github.com/choria-plugins/filemgr-agent",
             :timeout     => 5
 
 requires :mcollective => "2.2.1"
