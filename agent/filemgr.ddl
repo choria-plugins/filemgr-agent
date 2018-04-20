@@ -2,7 +2,7 @@ metadata    :name        => "filemgr",
             :description => "File Manager",
             :author      => "Mike Pountney <mike.pountney@gmail.com>",
             :license     => "Apache-2.0",
-            :version     => "2.0.0",
+            :version     => "2.0.1",
             :url         => "https://github.com/choria-plugins/filemgr-agent",
             :timeout     => 5
 
