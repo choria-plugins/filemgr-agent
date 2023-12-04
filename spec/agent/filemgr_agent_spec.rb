@@ -40,20 +40,20 @@ module MCollective
 
       describe "remove" do
         it "should not try to remove a file that isn't present" do
-          File.expects(:exists?).with("/tmp/foo").returns(false)
+          File.expects(:exist?).with("/tmp/foo").returns(false)
           result = @agent.call(:remove, :file => "/tmp/foo")
           result.should be_aborted_error
         end
 
         it "should fail if it can't remove the file" do
-          File.expects(:exists?).with("/tmp/foo").returns(true)
+          File.expects(:exist?).with("/tmp/foo").returns(true)
           FileUtils.expects(:rm).raises("error")
           result = @agent.call(:remove, :file => "/tmp/foo")
           result.should be_aborted_error
         end
 
         it "should remove a file" do
-          File.expects(:exists?).with("/tmp/foo").returns(true)
+          File.expects(:exist?).with("/tmp/foo").returns(true)
           FileUtils.expects(:rm)
           result = @agent.call(:remove, :file => "/tmp/foo")
           result.should be_successful
@@ -62,7 +62,7 @@ module MCollective
 
       describe "status" do
         it "should fail if the file isn't present" do
-          File.expects(:exists?).with("/tmp/foo").returns(false)
+          File.expects(:exist?).with("/tmp/foo").returns(false)
           result = @agent.call(:status, :file => "/tmp/foo")
           result.should be_aborted_error
         end
@@ -70,7 +70,7 @@ module MCollective
         it "should return the file status" do
           stat = mock
 
-          File.expects(:exists?).with("/tmp/foo").returns(true)
+          File.expects(:exist?).with("/tmp/foo").returns(true)
           File.expects(:symlink?).returns(false)
           File.expects(:stat).with("/tmp/foo").returns(stat)
           File.stubs(:read).returns("")

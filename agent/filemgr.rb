@@ -46,7 +46,7 @@ module MCollective
         reply[:uid] = 0
         reply[:gid] = 0
 
-        if File.exists?(file)
+        if File.exist?(file)
           Log.debug("Asked for status of '#{file}' - it is present")
           reply[:output] = "present"
           reply[:present] = 1
@@ -91,7 +91,7 @@ module MCollective
       def remove
         file = get_filename
 
-        if File.exists?(file) || File.symlink?(file)
+        if File.exist?(file) || File.symlink?(file)
           begin
             FileUtils.rm(file)
             Log.debug("Removed file '#{file}'")
