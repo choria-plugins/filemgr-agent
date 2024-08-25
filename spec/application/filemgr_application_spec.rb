@@ -73,9 +73,9 @@ module MCollective
 
         it 'should fail on an invalid command' do
           @app.configuration[:command] = 'rspec'
-          expect{
+          lambda {
             @app.main
-          }.to raise_error
+          }.should raise_error(SystemExit, 'exit')
         end
       end
     end
