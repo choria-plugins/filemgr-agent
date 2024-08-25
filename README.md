@@ -2,7 +2,13 @@
 
 This agent let you touch files, delete files or retrieve a bunch of stats about a file.
 
-<!--- actions -->
+## Actions
+
+This agent provides the following actions, for details about each please run `mco plugin doc agent/filemgr`
+
+ * **remove** - Removes a file
+ * **status** - Basic information about a file
+ * **touch** - Creates an empty file or touch it's timestamp
 
 ## Installation
 

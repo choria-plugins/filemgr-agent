@@ -1,13 +1,13 @@
 #!/usr/bin/env rspec
 
 require 'spec_helper'
-require File.join(File.dirname(__FILE__), '../../', 'application', 'filemgr.rb')
+require File.join(File.dirname(__FILE__), '../../',  'files', 'mcollective', 'application', 'filemgr.rb')
 
 module MCollective
   class Application
     describe Filemgr do
       before do
-        application_file = File.join(File.dirname(__FILE__), '../../', 'application', 'filemgr.rb')
+        application_file = File.join(File.dirname(__FILE__), '../../',  'files', 'mcollective', 'application', 'filemgr.rb')
         @app = MCollective::Test::ApplicationTest.new('filemgr', :application_file => application_file).plugin
       end
 
