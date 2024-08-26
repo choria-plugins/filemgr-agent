@@ -2,6 +2,12 @@
 
 Change history for `choria/mcollective_agent_filemgr`
 
+## 2.1.0
+
+Released 2024-08-26
+
+ * Support latest ruby and use new module layout
+
 ## 2.0.3
 
 Released 2024-08-25
