@@ -1,6 +1,6 @@
 {
   "name": "choria-mcollective_agent_filemgr",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "author": "Mike Pountney <mike.pountney@gmail.com>",
   "license": "Apache-2.0",
   "summary": "File Manager",
