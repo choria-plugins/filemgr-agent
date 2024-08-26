@@ -2,6 +2,13 @@
 
 Change history for `choria/mcollective_agent_filemgr`
 
+## 2.0.3
+
+Released 2024-08-25
+
+ * Use a regular module structure in the source repository
+ * Update requirements (choria needs a recent version of Puppet)
+
 ## 2.0.2
 
 Released 2024-02-03
