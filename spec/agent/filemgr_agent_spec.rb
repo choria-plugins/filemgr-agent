@@ -1,13 +1,13 @@
 #!/usr/bin/env rspec
 
 require 'spec_helper'
-require File.join(File.dirname(__FILE__), "../../", "agent", "filemgr.rb")
+require File.join(File.dirname(__FILE__), "../../",  "files", "mcollective", "agent", "filemgr.rb")
 
 module MCollective
   module Agent
     describe Filemgr do
       before do
-        agent_file = File.join([File.dirname(__FILE__), "../../", "agent", "filemgr.rb"])
+        agent_file = File.join([File.dirname(__FILE__), "../../",  "files", "mcollective", "agent", "filemgr.rb"])
         @agent = MCollective::Test::LocalAgentTest.new("filemgr", :agent_file => agent_file).plugin
       end
 
